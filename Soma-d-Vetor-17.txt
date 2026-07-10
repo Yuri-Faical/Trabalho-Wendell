@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int vetor1[5], vetor2[5], vetorSoma[5];
+
+    cout << "Digite 5 valores para o primeiro vetor:" << endl;
+    for(int i = 0; i < 5; i++) {
+        cout << "Vetor 1 [" << i << "]: ";
+        cin >> vetor1[i];
+    }
+
+    cout << "\nDigite 5 valores para o segundo vetor:" << endl;
+    for(int i = 0; i < 5; i++) {
+        cout << "Vetor 2 [" << i << "]: ";
+        cin >> vetor2[i];
+    }
+
+    // Criando o terceiro vetor com a soma
+    for(int i = 0; i < 5; i++) {
+        vetorSoma[i] = vetor1[i] + vetor2[i];
+    }
+
+    cout << "\nResultado da soma (Vetor 3):" << endl;
+    for(int i = 0; i < 5; i++) {
+        cout << "Vetor Soma [" << i << "] = " << vetorSoma[i] << endl;
+    }
+
+    return 0;
+}
